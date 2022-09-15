@@ -1,0 +1,124 @@
+// --GLOBALES--
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+body{
+    margin:0;
+    padding:0;
+    line-height: 1.6;
+    font-family: 'Noto Sans JP', sans-serif;
+    background: url('../img/fondo.png');
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+    color: rgb(134, 132, 132);
+}
+
+img{
+    width:80%;
+    height: auto;
+}
+
+nav, .servicios, .presentacion, .footer-content{
+    width: 80%;
+    margin:auto;
+}
+
+.titulo-servicios, .presentacion{
+    margin-bottom: 10%;
+}
+
+// --Variables--
+
+$font-p: 1.8rem;
+$font-h1: 3.0rem;
+$font-h2: 2.4rem;
+$font-h3: 2.0rem;
+
+p{
+    font-size:$font-p;
+    color: rgb(134, 132, 132);
+}
+
+h2{
+    font-size: $font-h2;
+}
+
+h3{
+    font-size: $font-h3;
+    font-weight:lighter;
+}
+
+// --BOTONES--
+
+.btn{
+    border: none;
+    border-radius:2px;
+    padding: 0.7em 1.5em;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-size:1.5rem;
+    font-weight: 500;
+    transition: transform 100ms;
+    &:hover{
+        transform: scale(1.1);
+    }
+    
+}
+
+.btn-principal{
+    @extend .btn;
+    color: #fff;
+    background-color: #f19d53;
+}
+
+.btn-secundario{
+    @extend .btn;
+    background-color:rgb(134, 132, 132);
+}
+
+// --MIXINS--
+
+@mixin caja-flex($principal, $cruzado, $wrap){
+    display: flex;
+    justify-content: $principal;
+    align-items: $cruzado;
+    flex-wrap: $wrap;
+}
+
+// --FUNCTIONS--
+
+@function font-calc($size, $type){
+
+    $font: 16;
+
+    @if $type ==h1{
+        $font: ($size + 0.2*$size);
+    }
+
+    @if $type ==h2{
+        $font: ($size + 0.1*$size);
+    }
+
+    @else{
+        $font: 16;
+    }
+
+    @return $font + px;
+
+}

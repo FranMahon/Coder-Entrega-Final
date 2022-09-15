@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Todos Nuestros granos de cafe pasan por los mas rigurosos examenes">
+  <meta name="keywords" content="Cafe, Cafeteria, Granos, Granos Cafes">
+  <title>Cafes</title>
+  <link rel="stylesheet" href="/css/main.css">
+  <script src="https://kit.fontawesome.com/efa5ea2eda.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header id="menu">         
+    <nav>
+      <a href="/index.html"><img src="/img/logo.png" class="logo" alt="logo"></a>
+      <ul>
+        <li><a href="/index.html">INICIO</a></li>
+        <li><a href="cafes.html">CAFES</a></li>
+        <li><a href="contactos.html">CONTACTOS</a></li>
+      </ul>
+    </nav>            
+  </header>
+
+<!--  Presentacion  -->
+  <section class="presentacion">
+    <div class="flex-item1">
+      <h1>Solo los mejores Granos de cafe 🌱​​</h1>
+      <p>
+        Cada uno de nuestras granos pasan por un riburoso proceso de seleccion y clasificacion, para poder ofrecerte solo lo mejor de lo mejor!.
+      </p>
+      <div>
+        <button class="btn-principal" type ="submit">Variedades</button>
+        <button class="btn-secundario" type ="submit">Nuevos!</button>
+      </div>
+      </div>
+      <div class="flex-item2">
+        <img src="/img/granoscafe.png" alt="caratula" width="500" height="400">
+    </div>
+  </section>
+
+<!--  Servicios  -->
+  <div class="wrapper">
+    <section class="servicios" >
+      <div class="titulo-servicios">
+        <h2>🛎️​​ No dudes en consultarnos por otras variedades 🛎️​​</h2>
+      </div>
+      <div class="tipo-servicios">
+        <div>
+          <i class="fa-solid fa-umbrella"></i>
+          <h3>Arábico 💲💲​💲​​</h3>
+          <p>
+            Entre 1 y 1.5% de cafeina perfecto para un sabor suave en esos dias de lluvia
+          </p>
+        </div>
+        <div>
+          <i class="fa-solid fa-filter"></i>
+          <h3>Kenya 💲​💲​</h3>
+          <p>
+            Originario de Africa cultivado en tierras volcanicas con un sabor intenso, ideal para filtrado
+          </p>
+        </div>
+        <div>
+          <i class="fa-solid fa-bolt"></i>
+          <h3>Typica 💲​</h3>
+          <p>
+            Con un sabor muy dulce y una alta concentracion de cafeina!
+          </p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+<!--  Footer  -->
+  <footer>
+  <p class="footer-content">
+    Cafecito &copy; Derechos reservados 2022
+  </p>
+  </footer>
+  <script>
+    const menu = document.getElementById('menu');
+    window.onscroll = function(){
+      if(window.pageYOffset>10){
+        menu.style.backgroundColor='#fff';
+      }
+      else{
+        menu.style.backgroundColor='initial';
+      }
+    }
+  </script>
+</body>
+</html>

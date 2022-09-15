@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap");
+html {
+  font-size: 62%;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  font-family: 'Noto Sans JP', sans-serif;
+  background: url("../img/fondo.jpg");
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  color: #eaa13cd7;
+}
+
+img {
+  width: 80%;
+  height: auto;
+}
+
+nav, .servicios, .presentacion, .footer-content {
+  width: 80%;
+  margin: auto;
+}
+
+.titulo-servicios, .presentacion {
+  margin-bottom: 10%;
+}
+
+p {
+  font-size: 1.8rem;
+  color: #6d6c6c;
+}
+
+h2 {
+  font-size: 2.4rem;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: lighter;
+}
+
+.btn, .btn-principal, .btn-secundario {
+  border: none;
+  border-radius: 2px;
+  padding: 0.7em 1.5em;
+  cursor: pointer;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  transition: transform 100ms;
+}
+
+.btn:hover, .btn-principal:hover, .btn-secundario:hover {
+  transform: scale(1.1);
+}
+
+.btn-principal {
+  color: #fff;
+  background-color: #f19d53;
+}
+
+.btn-secundario {
+  background-color: #9e9e9e;
+}
+
+.ejemplo {
+  font-size: 55px;
+}
+
+.logo {
+  width: 100px;
+  height: 20px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  border-top: 30px solid #945716;
+  width: 100%;
+}
+
+.wrapper {
+  background-color: #fff;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+nav ul {
+  display: flex;
+  padding: 0;
+}
+
+nav ul a {
+  padding: 10px;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+nav ul a:hover {
+  color: #e9b590;
+  transform: scale(1.1);
+}
+
+.presentacion {
+  padding-top: 200px;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.presentacion .flex-item2 {
+  text-align: center;
+}
+
+.presentacion h1 {
+  margin-top: 0;
+  padding-right: 20px;
+  font-size: 3rem;
+}
+
+.presentacion p {
+  padding-right: 20px;
+  padding-bottom: 10px;
+}
+
+.servicios div {
+  text-align: center;
+}
+
+.servicios .tipo-servicios {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.servicios .tipo-servicios i {
+  font-size: 30px;
+  color: #64350f;
+}
+
+
+/* --FOOTER-- */
+
+footer {
+  min-height: 80px;
+  background-color: #9457164c;
+  margin-top: 0;
+}
+
+footer .footer-content {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+
+/* --MEDIAS-- */
+
+@media (min-width: 1400px) {
+  nav, .servicios, .footer-content, .presentacion {
+    width: 60%;
+    margin: auto;
+  }
+}
+
+@media (max-width: 992px) {
+  .presentacion, .tipo-servicios {
+    flex-direction: column;
+  }
+  .presentacion div {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+  nav ul {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 420px) {
+  .presentacion div {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .presentacion div h1, .presentacion div p {
+    padding: 0;
+  }
+}

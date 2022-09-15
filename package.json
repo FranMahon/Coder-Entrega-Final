@@ -1,0 +1,29 @@
+{
+  "name": "cafecito2",
+  "version": "1.0.0",
+  "description": "mi proyecto de cafeteria",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FranMahon/Coder-SASS-II-SEO.git"
+  },
+  "keywords": [
+    "cafeteria"
+  ],
+  "author": "Francisco Mahon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FranMahon/Coder-SASS-II-SEO/issues"
+  },
+  "homepage": "https://github.com/FranMahon/Coder-SASS-II-SEO#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  },
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}

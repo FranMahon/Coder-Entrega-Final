@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Te invitamos a probar uno de los mejores cafes que vas a probar!">
+  <meta name="keywords" content="Cafe, Cafeteria, Cafe Buenos Aires, Cafeteras">
+  <title>Cafecito</title>
+  <link rel="stylesheet" href="css/main.css">
+  <script src="https://kit.fontawesome.com/efa5ea2eda.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header id="menu">         
+    <nav>
+      <a href="index.html"><img src="img/logo.png" class="logo" alt="logo"></a>
+      <ul>
+        <li><a href="index.html">INICIO</a></li>
+        <li><a href="/pages/cafes.html">CAFES</a></li>
+        <li><a href="/pages/contactos.html">CONTACTOS</a></li>
+      </ul>
+    </nav>            
+  </header>
+
+<!--  Presentacion  -->
+  <section class="presentacion">
+    <div class="flex-item1">
+      <h1>Realizamos los mejores cafes ☕</h1>
+      <p>
+        Ubicados en el corazon de Buenos Aires te esperamos para que pruebos cada una de nuestras diferentes variedades, nuestro objetivo es siempre que disfrutes cada sorbo!.
+      </p>
+      <div>
+        <button class="btn-principal" type ="submit">Pedidos</button>
+        <button class="btn-secundario" type ="submit">Opciones</button>
+      </div>
+      </div>
+      <div class="flex-item2">
+        <img src="img/caratula.png" alt="caratula" width="500" height="400">
+    </div>
+  </section>
+
+<!--  Servicios  -->
+  <div class="wrapper">
+    <section class="servicios" >
+      <div class="titulo-servicios">
+        <h2>🤎​ Cada cafe es unico y los hacemos pensando en vos 🤎​</h2>
+        <p>
+          Más de 50 de años de experencia nos respaldan en ofrecerte la mejor taza de cafe para esos momentos que más lo necesitas.
+        </p>
+      </div>
+      <div class="tipo-servicios">
+        <div>
+          <i class="fa-solid fa-mug-hot"></i>
+          <h3>Cafes</h3>
+          <p>
+            Cada uno de nuestrso cafes es unico y realizados pensando en darte solo lo mejor!.
+          </p>
+        </div>
+        <div>
+          <i class="fa-solid fa-kitchen-set"></i>
+          <h3>Nuestros Granos</h3>
+          <p>
+            Cada uno de nuestrso granos pasan por el más exhaustivos de los procesos.
+          </p>
+        </div>
+        <div>
+          <i class="fa-solid fa-cart-shopping"></i>
+          <h3>Hace tu pedido</h3>
+          <p>
+            Hace tu pedido y te lo enviamos en el mismo dia sin cargo!.
+          </p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+<!--  Footer  -->
+  <footer>
+  <p class="footer-content">
+    Cafecito &copy; Derechos reservados 2022
+  </p>
+  </footer>
+  <script>
+    const menu = document.getElementById('menu');
+    window.onscroll = function(){
+      if(window.pageYOffset>10){
+        menu.style.backgroundColor='#fff';
+      }
+      else{
+        menu.style.backgroundColor='initial';
+      }
+    }
+  </script>
+</body>
+</html>
